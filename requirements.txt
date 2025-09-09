@@ -1,0 +1,5 @@
+tkinter
+pillow
+numpy
+opencv-python
+pathlib
