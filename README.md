@@ -9,11 +9,12 @@ A simple GUI application for annotating images and generating augmented datasets
 The labeling interface uses an intuitive way to annotate images with bounding boxes using a 4-corner polygon format. This allows annotations of rotated or skewed objects compared to standard rectangular bounding boxes to be displayed. Currently rotated and skewed bounding boxes can not be drawn.
 
 Key annotation features:
-• Click and drag to create bounding boxes
-• Multiple object classes, color coded
-• Annotation preview and editing
-• Keyboard shortcuts for navigation (arrow keys, number keys for class selection)
-• Right click to delete annotations
+
+- Click and drag to create bounding boxes
+- Multiple object classes, color coded
+- Annotation preview and editing
+- Keyboard shortcuts for navigation (arrow keys, number keys for class selection)
+- Right click to delete annotations
 
 ### 2. Data Augmentation and Transformation
 
@@ -22,9 +23,10 @@ The integrated transformer allows us to generate additional images to expand tra
 ### 3. Export Formats
 
 Supported formats:
-• [YOLO/YOLOv8](https://en.wikipedia.org/wiki/You_Only_Look_Once) OBB: Oriented bounding box format with class index, center coordinates, dimensions, and rotation angle
-• [DOTA](https://captain-whu.github.io/DOTA/index.html): 4-corner coordinate format commonly used in aerial image datasets
-• 4-corner JSON: Custom JSON format with exact coordinates for easier loading
+
+- [YOLO/YOLOv8](https://en.wikipedia.org/wiki/You_Only_Look_Once) OBB: Oriented bounding box format with class index, center coordinates, dimensions, and rotation angle
+- [DOTA](https://captain-whu.github.io/DOTA/index.html): 4-corner coordinate format commonly used in aerial image datasets
+- 4-corner JSON: Custom JSON format with exact coordinates for easier loading
 
 ## Installation and Usage
 
@@ -68,20 +70,23 @@ python main.py
 ### Core Components
 
 [labeler.py](src/labeler.py):
-• Canvas based image display
-• Bounding box draw and delete
-• Class management
-• Annotation visualization
+
+- Canvas based image display
+- Bounding box draw and delete
+- Class management
+- Annotation visualization
 
 [transformer.py](src/labeler.py):
-• Configurable image transformation
-• Automatic annotation coordinate transformation
-• Dataset splitting (train/validation/test)
-• Test mode for transform visualization
+
+- Configurable image transformation
+- Automatic annotation coordinate transformation
+- Dataset splitting (train/validation/test)
+- Test mode for transform visualization
 
 [file_managment.py](src/file_managment.py):
-• 3 different export formats
-• Creates organized directory structure for test/train split
+
+- 3 different export formats
+- Creates organized directory structure for test/train split
 
 ## Notes
 

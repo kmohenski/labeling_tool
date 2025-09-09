@@ -28,17 +28,6 @@ Automated train/validation/test splitting, ensuring proper data distribution acr
 
 Transforms are applied sequentially with early termination on failure. The pipeline prioritizes multi image transforms before single image transforms.
 
-<!-- 'Horizontal Flip':
-'Vertical Flip': {'
-'Random Rotate': {'
-'HSV': {'enabled':
-'Random Brightness'
-'Random Contrast':
-'Gaussian Blur': {'
-'Random Affine': {'
-'Noise': {'enabled'
-'CutOut': {'enabled -->
-
 ## Examples
 
 ### Original
